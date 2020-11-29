@@ -30,8 +30,6 @@ WriteBatch::WriteBatch() { Clear(); }
 
 WriteBatch::~WriteBatch() = default;
 
-WriteBatch::Handler::~Handler() = default;
-
 void WriteBatch::Clear() {
   rep_.clear();
   rep_.resize(kHeader);
